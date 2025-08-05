@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate="contact-title">Contacto</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/footer.css" />
+  <link rel="stylesheet" href="../../assets/css/projects.css" />
+  <link rel="stylesheet" href="../../assets/css/contacte.css" />
+  <link rel="stylesheet" href="../../assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="../../assets/css/experience.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <main class="main-section">
+    <header class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <i class="fas fa-envelope-circle-check fa-3x"></i>
+      </div>
+      <div class="hero-text">
+        <h1 data-translate="contact-title">Ponte en contacto</h1>
+          <p data-translate="contact-subtitle">Estoy encantada de saber de ti. Puedes escribirme directamente o rellenar
+            el formulario.</p>
+      </div>
+    </div>
+  </header>
+
+   <nav>
+    <div class="container">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="/index.html"  data-translate="nav-home">Inicio</a></li>
+          <li><a href="./experience.html" data-translate="nav-experience">Experiencia</a></li>
+          <li><a href="./skills.html" data-translate="nav-skills">Habilidades</a></li>
+          <li><a href="./projects.html" data-translate="nav-projects">Proyectos</a></li>
+          <li><a href="./education.html" data-translate="nav-education">Educación</a></li>
+          <li><a href="./contact.html" data-translate="nav-contact">Contacto</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="theme-toggle" class="btn" aria-label="Cambiar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    <section class="contact-section">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" data-translate="form-name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre completo" required minlength="2"
+            pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="Por favor, ingresa solo letras y espacios."
+            aria-describedby="name-error" />
+          <span id="name-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-translate="form-email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required
+            aria-describedby="email-error" />
+          <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-translate="form-message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required
+            minlength="10" aria-describedby="message-error"></textarea>
+          <span id="message-error" class="error-message"></span>
+        </div>
+
+        <div class="form-conditions">
+          <input type="checkbox" id="conditions" name="conditions" required class="checkbox"
+            aria-describedby="conditions-error" />
+          <label for="conditions">
+            <span data-translate="form-conditions">Acepto la </span><a href="/politica-privacidad.html" target="_blank" data-translate="privacy-policy">política de
+              privacidad</a>
+          </label>
+          <span id="conditions-error" class="error-message"></span>
+        </div>
+
+        <button type="submit" class="btn" data-translate="form-submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+   <footer>
+  <div class="container">
+    <div class="footer-content">
+      <a href="https://drive.google.com/file/d/1LO3qd8rLTgUxP71ZiqeuROfSudhJyELr/view?usp=sharing" class="download-btn" download>
+        <i class="fas fa-download"></i>
+        <span data-translate="download-cv">Descargar CV</span>
+      </a>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ana-lucia-silva-cordoba" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/alusilcof5" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/alusilco" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/alusilco" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Popup -->
+  <div class="overlay" id="overlay" style="display: none;"></div>
+  <div class="popup" id="successPopup" style="display: none;">
+    <h2 data-translate="popup-title">¡Mensaje enviado!</h2>
+    <p data-translate="popup-message">Gracias por contactarme. Te responderé pronto.</p>
+    <button id="closePopup" data-translate="popup-close">Cerrar</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../javascript/template.js"></script>
+  <script src="../javascript/contacte.js"></script>
+  <script src="../javascript/script.js"></script>
+</body>
+
+</html>

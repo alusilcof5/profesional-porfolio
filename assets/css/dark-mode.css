@@ -1,0 +1,78 @@
+/* Variables para modo oscuro */
+:root[data-theme="dark"] {
+  --primary-color: #1b2733;
+  --secondary-color: #2980b9;
+  --accent-color: #c0392b;
+  --text-color: #e0e0e0;
+  --bg-color: #121212;
+  --card-bg: #1e2a38;
+  --border-color: #333;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Aplicar fondo y texto general */
+body[data-theme="dark"] {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navegación */
+body[data-theme="dark"] nav {
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+/* Links nav */
+body[data-theme="dark"] .nav-links a {
+  color: var(--text-color);
+}
+
+body[data-theme="dark"] .nav-links a:hover,
+body[data-theme="dark"] .nav-links a.active {
+  background: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+
+body[data-theme="dark"] .btn:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Cards y cajas */
+body[data-theme="dark"] .stat-item,
+body[data-theme="dark"] .contact-info {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+/* Header en modo oscuro */
+body[data-theme="dark"] header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  position: relative;
+  overflow: hidden;
+}
+
+/* Links contacto y social */
+body[data-theme="dark"] .contact-item a,
+body[data-theme="dark"] .contact-item i {
+  color: var(--text-color);
+}
+
+body[data-theme="dark"] .contact-item:hover {
+  background: var(--border-color);
+}
+
+body[data-theme="dark"] .social-links a {
+  background: var(--secondary-color);
+  color: white;
+}
+
+body[data-theme="dark"] .social-links a:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px) scale(1.1);
+}
