@@ -5,13 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ana Lucía Silva Córdoba | Portafolio Profesional</title>
-
-  <link rel="stylesheet" href="../../assets/css/style.css">
-  <link rel="stylesheet" href="../../assets/css/footer.css">
   <link rel="stylesheet" href="../../assets/css/skills.css">
-  <link rel="stylesheet" href="../../assets/css/dark-mode.css">
-  <link rel="stylesheet" href="../../assets/css/contacte.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/css/experience.css">
+   <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,24 +16,25 @@
     <div class="hero-content">
       <div class="hero-image">
         <i class="fas fa-tools"></i>
+        <div class="hero-text">
+          <h1 data-translate="contact-title">Habilidades</h1>
+          <p data-translate="contact-subtitle">Sitios web responsivos y diseño experiencias centradas en el usuario</p>
+        </div>
       </div>
-      <div class="hero-text">
-        <h1 data-translate="contact-title">Habilidades</h1>
-        <p data-translate="contact-subtitle">Sitios web responsivos y diseño experiencias centradas en el usuario</p>
-      </div>
-    </div>
   </header>
 
-  <nav>
+<nav>
     <div class="container">
       <div class="nav-container">
+      <!-- Navigation -->
+
         <ul class="nav-links">
-          <li><a href="/index.html" data-translate="nav-home">Inicio</a></li>
-          <li><a href="./experience.html" data-translate="nav-experience">Experiencia</a></li>
-          <li><a href="./skills.html" data-translate="nav-skills">Habilidades</a></li>
-          <li><a href="./projects.html" data-translate="nav-projects">Proyectos</a></li>
-          <li><a href="./education.html" data-translate="nav-education">Educación</a></li>
-          <li><a href="./contact.html" data-translate="nav-contact">Contacto</a></li>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="./experience.html">Experiencia</a></li>
+          <li><a href="./skills.html">Habilidades</a></li>
+          <li><a href="./projects.html">Proyectos</a></li>
+          <li><a href="./education.html">Educación</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
         </ul>
         <div class="nav-controls">
           <button id="theme-toggle" class="btn" aria-label="Cambiar tema">
@@ -46,6 +44,7 @@
       </div>
     </div>
   </nav>
+
 
   <main>
     <div class="container">
@@ -217,7 +216,7 @@
 
         </section>
 
-        <section class="section fade-in">
+       
           <h2>Certificaciones</h2>
           <div class="cert-grid">
             <div class="cert-card">
@@ -226,7 +225,7 @@
               <a href="https://www.credly.com/users/ana-lucia-silva-cordoba/badges" target="_blank" class="cert-link">
                 <i class="fas fa-external-link-alt"></i> Ver Certificaciones
               </a>
-            </div>
+            
 
             <div class="cert-card">
               <h3><i class="fab fa-google"></i> Perfiles Adicionales</h3>
@@ -243,7 +242,6 @@
           </div>
         </section>
 
-        <section class="section fade-in">
           <h2>Reconocimientos</h2>
           <div class="recognition-card">
             <div class="recognition-item">
@@ -279,10 +277,10 @@
               <h4><i class="fas fa-microphone"></i> Ponente en Congresos Educativos Diversos</h4>
               <p>Congresos y simposios sobre educación desde 2002, tecnología y género desde 2018</p>
               <div style="margin-top: 1rem;">
-                  
-                  <a href="http://www.jornadas.fhuce.edu.uy/index.php/es/"
-                    target="_blank" class="cert-link" style="display: block; margin-bottom: 0.5rem;">
-                    <i class="fas fa-external-link-alt"></i> Ver programas              
+
+                <a href="http://www.jornadas.fhuce.edu.uy/index.php/es/" target="_blank" class="cert-link"
+                  style="display: block; margin-bottom: 0.5rem;">
+                  <i class="fas fa-external-link-alt"></i> Ver programas
               </div>
             </div>
 
@@ -317,34 +315,47 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-content">
-        <a href="https://www.canva.com/design/DAGK9r5Mdf0/cP4_5J9nlTuYzFVk9iNv1w/view?utm_content=DAGK9r5Mdf0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h22883ddf7e"
-          class="download-btn" download>
-          <i class="fas fa-download"></i>
-          <span data-translate="download-cv">Descargar CV</span>
-        </a>
+        <div class="footer-text">
+          <p>Full Stack Developer apasionada por crear experiencias digitales excepcionales</p>
+        </div>
+        
+        <div class="footer-actions">
+          <a href="../../assets/cv/CV_Ana_Lucia_Silva.pdf" download class="download-btn">
+            <i class="fas fa-download"></i>
+            Descargar CV
+          </a>
+        </div>
 
         <div class="social-links">
-          <a href="https://linkedin.com/in/ana-lucia-silva-cordoba" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/alusilcof5" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/alusilcof5" target="_blank" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/alusilco" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
+          <a href="https://linkedin.com/in/ana-lucia-silva-cordoba" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://instagram.com/alusilco" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
+          <a href="mailto:ana.silva.dev@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://twitter.com/alusilco" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
           </a>
         </div>
       </div>
+      
+      <div class="footer-bottom">
+        <hr style="border-color: rgba(255,255,255,0.1); margin: 2rem 0 1rem;">
+        <p style="text-align: center; opacity: 0.7; font-size: 0.9rem;">
+          © 2025 Ana Lucía Silva Córdoba. Todos los derechos reservados.
+        </p>
+      </div>
     </div>
   </footer>
+<script src="../javascript/skills.js"></script>
 
-  <script src="../javascript/skills.js"></script>
 </body>
 
 </html>

@@ -90,6 +90,7 @@
       opacity: 0.9;
       max-width: 600px;
       margin: 0 auto;
+      
       animation: fadeInUp 1s ease-out 0.3s backwards;
     }
 
@@ -369,10 +370,15 @@
       margin: 0 auto;
     }
 
+    .section.volunteer-section {
+  margin-bottom: 200px;
+}
+
+
     .volunteer-card {
       background: white;
       border-radius: 20px;
-      padding: 2rem;
+      padding: 4rem;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
       position: relative;

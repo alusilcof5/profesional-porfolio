@@ -163,7 +163,7 @@ header h2 {
 /* Formulario de contacto */
 .contact-section {
   width: 70%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
 }
@@ -319,7 +319,6 @@ textarea {
     gap: 2rem;
   }
 
-  
 
   .contact-section {
     width: 90%;
