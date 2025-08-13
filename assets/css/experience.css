@@ -34,6 +34,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
+      
     }
 
     /* Header */
@@ -196,6 +197,7 @@
       position: relative;
       max-width: 900px;
       margin: 0 auto;
+      
     }
 
     .timeline::before {
@@ -208,12 +210,14 @@
       background: var(--gradient-primary);
       transform: translateX(-50%);
       border-radius: 2px;
+      
     }
 
     .timeline-item {
       position: relative;
       margin-bottom: 3rem;
       width: 100%;
+      
     }
 
     .timeline-item:nth-child(odd) .timeline-content {
@@ -235,6 +239,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
       position: relative;
+      
     }
 
     .timeline-content:hover {

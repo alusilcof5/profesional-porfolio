@@ -29,12 +29,15 @@
       color: var(--text-color);
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
+      
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
+      
+    
     }
 
     /* Header */
@@ -190,6 +193,7 @@
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
+      
     }
 
     .timeline-compact::before {
@@ -209,8 +213,8 @@
       padding-left: 70px;
     }
 
-    .timeline-item-compact:last-child {
-      margin-bottom: 0;
+    .final{
+      margin-bottom: 150px;
     }
 
     .timeline-dot-compact {
@@ -261,6 +265,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
       transition: all 0.3s ease;
       border-left: 4px solid transparent;
+      
     }
 
     .timeline-content-compact:hover {
