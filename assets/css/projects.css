@@ -26,7 +26,6 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: var(--text-color);
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
     }
 
@@ -173,7 +172,7 @@
       justify-content: center;
       max-width: 1500px;
       margin: 0 auto;
-      margin-bottom: 200px;
+      margin-bottom: 50px;
     }
 
     .project-card {
